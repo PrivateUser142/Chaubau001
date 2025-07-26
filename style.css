@@ -1,0 +1,238 @@
+/* Basic Resets & Body Styling */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000; /* Deep black background */
+    color: #fff; /* White text for contrast */
+    display: flex; /* Use flexbox to center content vertically */
+    justify-content: center; /* Center horizontally */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    padding: 20px 0; /* Add some vertical padding */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+
+    /* --- FIXES START HERE --- */
+    background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3V0OWdwdno1b2ZueWZhdzNqZjFrdXpqdDF1NTdyejN4dzc4bW9ncyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RlwF2vFb4y7bDnWvcO/giphy.gif');
+    background-size: cover; /* Corrected property name */
+    background-repeat: no-repeat; /* Added to prevent tiling */
+    background-position: center center; /* Added to center the image */
+    background-attachment: fixed; /* Optional: Keeps the background fixed on scroll */
+    /* --- FIXES END HERE --- */
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed, based on typical link-in-bio pages */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Horizontal padding for smaller screens */
+    box-sizing: border-box;
+}
+
+/* Header Section (Banner, Profile Info) */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #1a1a1a; /* Dark background for header */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures banner image respects border-radius */
+    padding-bottom: 20px; /* Padding inside the header */
+}
+
+.banner-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 120px; /* Size of the circular profile picture */
+    height: 120px;
+    border-radius: 50%; /* Makes it circular */
+    border: 4px solid #333; /* A slight border around the pic */
+    object-fit: cover; /* Ensures image covers the circle without distortion */
+    margin-top: -40px; /* Pulls the image up over the banner */
+    position: relative; /* Allows z-index */
+    z-index: 2; /* Ensures it's above other elements if layered */
+}
+
+.profile-info h1 {
+    font-size: 2.5em;
+    margin: 10px 0 5px;
+    color: #fff;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.8em;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.social-links a:hover {
+    color: #00aaff; /* Example hover color for social icons */
+}
+
+/* Main Links Section */
+.links-section {
+    margin-bottom: 30px;
+}
+
+.link-category {
+    margin-bottom: 30px;
+}
+
+.category-title {
+    font-size: 1.2em;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-left: 10px; /* Indent titles slightly */
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes icon/text to left, arrow to right */
+    background-color: #1a1a1a; /* Darker background for buttons */
+    color: #fff;
+    text-decoration: none; /* Remove underline from links */
+    padding: 15px 20px;
+    margin-bottom: 12px; /* Space between buttons */
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link-button:hover {
+    background-color: #2a2a2a; /* Lighter on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.link-button .button-content {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icon and text */
+}
+
+.link-icon {
+    width: 30px; /* Size of the icon images within buttons */
+    height: 30px;
+    object-fit: contain; /* Ensures icon fits without distortion */
+}
+
+.link-button span {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.arrow-icon {
+    font-size: 1em;
+    color: #888; /* Dimmed arrow */
+}
+
+/* Video Grid Section (example styling) */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 15px;
+}
+
+.video-item {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 100px; /* Fixed height for thumbnails, adjust as needed */
+    object-fit: cover;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.video-title {
+    font-size: 0.9em;
+    color: #ccc;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Gear List Section (example styling) */
+.gear-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gear-item {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px 25px;
+}
+
+.gear-icon {
+    width: 196px;
+    height: 196px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.gear-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #ccc;
+}
+
+.gear-item strong {
+    color: #fff;
+}
+
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #555;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 1px solid #222; /* A subtle separator */
+}
+
+/* Responsive adjustments for smaller screens (if needed, though base is mobile-friendly) */
+@media (max-width: 1080px) {
+    .profile-info h1 {
+        font-size: 2em;
+    }
+    .tagline {
+        font-size: 1em;
+    }
+    .link-button {
+        padding: 12px 15px;
+    }
+    .link-button span {
+        font-size: 1em;
+    }
+    .social-links a {
+        font-size: 1.5em;
+    }
+}

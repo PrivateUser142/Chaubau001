@@ -11,7 +11,7 @@ body {
     box-sizing: border-box; /* Include padding in element's total width and height */
 
     /* --- FIXES START HERE --- */
-    background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3V0OWdwdno1b2ZueWZhdzNqZjFrdXpqdDF1NTdyejN4dzc4bW9ncyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RlwF2vFb4y7bDnWvcO/giphy.gif');
+    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWNiYW54cmV1M2wyZnNuZm56M2JwbW5zdWEwM2MxNXZkcTk1dHMxNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Byour3OgR0nWnRR6Tc/giphy.gif');
     background-size: cover; /* Corrected property name */
     background-repeat: no-repeat; /* Added to prevent tiling */
     background-position: center center; /* Added to center the image */
@@ -243,4 +243,19 @@ body {
     background-color: #1a1a1a;
     border-radius: 8px;
     padding: 20px 25px;
+    text-shadow: #fff;
+    text-decoration: solid;
+    text-overflow: ellipsis;
+    
+}
+.pic {
+    border-width: 2cm;
+    block-size: 2cm;
+}
+footer {
+    font-size: larger;
+    line-gap-override: var(#1a1a1a);
+    font-kerning: initial;
+    align-self: self-end;
+    color: #000;
 }
